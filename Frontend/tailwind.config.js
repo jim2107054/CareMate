@@ -10,7 +10,15 @@ export default {
         primaryText:"#1C4A2A",
         hoverText:"#f5a911",
         navText:"#8C8C8C",
-        btnColor:"#C6B09A"
+        btnColor:"#C6B09A",
+        labelText:"#222126",
+        inputBox:"#F5F5F5",
+      },
+      backgroundImage:{
+        'SignInUP':"url('/src/assets/HeroImage.png')",
+      },
+      fontWeight:{
+        labelClass: 500,
       }
     },
   },

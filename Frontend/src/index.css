@@ -10,3 +10,11 @@
   @apply bg-btnColor border-[1px] text-[20px] hover:bg-green-800 hover:font-semibold hover:text-white text-black px-[32px] py-[4px] rounded-md
   transition-all duration-300 ease-in-out;
 }
+
+.labelANai{
+  @apply text-xl font-labelClass text-labelText;
+}
+
+.inputBox{
+  @apply h-14 px-5 rounded-xl bg-inputBox;
+}
