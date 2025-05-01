@@ -13,6 +13,7 @@ export default {
         btnColor:"#C6B09A",
         labelText:"#222126",
         inputBox:"#F5F5F5",
+        lightBlack:"#000000a2"
       },
       backgroundImage:{
         'SignInUP':"url('/src/assets/HeroImage.png')",
