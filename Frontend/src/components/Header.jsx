@@ -5,8 +5,9 @@ return (
     <section>
             <header className="bg-[#d8d7d7b7] text-white px-16 py-4 flex justify-between items-center">
                     <div className="logo flex items-center gap-2">
-                            <img src='/src/assets/CareMate.png'></img>
-                            <h2 className='text-3xl text-primaryText'>CareMate</h2>
+                            <a href="#" className=""><img src='/src/assets/CareMate.png'></img></a>
+                            <a href="#" className=""><h2 className='text-3xl text-primaryText'>CareMate</h2></a>
+                            
                     </div>
                     <div className="px-10 py-2">
                             <nav className='flex gap-20 text-2xl text-navText '>
