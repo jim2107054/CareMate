@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navItem {
+  @apply  hover:bg-green-800 hover:px-4 hover:py-1 hover:rounded-md ;
+}
