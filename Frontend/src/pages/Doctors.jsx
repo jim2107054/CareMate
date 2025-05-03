@@ -1,8 +1,9 @@
 import React from 'react'
+import MainLayout from '../components/MainLayout'
 
 const Doctors = () => {
   return (
-    <div>Doctors</div>
+    <MainLayout>Doctors</MainLayout>
   )
 }
 

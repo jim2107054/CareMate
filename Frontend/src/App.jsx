@@ -10,6 +10,7 @@ import MyAppointment from './pages/MyAppointment';
 import MyProfile from './pages/MyProfile';
 import Reviews from './pages/Reviews';
 import Doctors from './pages/Doctors';
+import HealthBlog from './pages/HealthBlog';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Route path='/my-profile' element={<MyProfile/>}/>
       <Route path='/reviews' element={<Reviews/>}/>
       <Route path='/doctors' element={<Doctors/>}/>
+      <Route path='/blog' element={<HealthBlog/>}/>
     </Routes>
     </>
   )

@@ -1,8 +1,9 @@
 import React from 'react'
+import MainLayout from '../components/MainLayout'
 
 const HealthBlog = () => {
   return (
-    <div>HealthBlog</div>
+    <MainLayout>HealthBlog</MainLayout>
   )
 }
 

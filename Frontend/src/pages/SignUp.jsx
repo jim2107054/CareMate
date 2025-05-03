@@ -16,7 +16,7 @@ const SignUp = () => {
 
   return (
     <MainLayout>
-      <div className='bg-SignInUP bg-cover h-[89vh] flex justify-center items-center'>
+      <div className='bg-SignInUP bg-cover w-full h-[89vh] flex justify-center items-center'>
         <div className="bg-[#9996968a] backdrop-blur-md w-1/3 h-fit rounded-xl flex flex-col px-10 py-6">
           <h1 className='text-3xl text-[#000000] font-semibold font-sans mb-2'>Sign Up</h1>
           <p className="text-lightBlack text-xl mb-5">Already a member?<a onClick={()=>navigate('/login')} className='text-primaryText ml-4 cursor-pointer' href='#'>Login</a></p>
