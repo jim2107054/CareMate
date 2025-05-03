@@ -1,5 +1,6 @@
 import React from 'react'
 import MainLayout from '../components/MainLayout'
+import { useNavigate } from 'react-router-dom'
 
 const SignUpInfo = [
   { label: 'Role', type: 'text', placeholder: 'Select Role', required:false },
@@ -10,17 +11,20 @@ const SignUpInfo = [
 ]
 
 const SignUp = () => {
+
+  const navigate = useNavigate();
+
   return (
     <MainLayout>
       <div className='bg-SignInUP bg-cover h-[89vh] flex justify-center items-center'>
         <div className="bg-[#9996968a] backdrop-blur-md w-1/3 h-fit rounded-xl flex flex-col px-10 py-6">
           <h1 className='text-3xl text-[#000000] font-semibold font-sans mb-2'>Sign Up</h1>
-          <p className="text-lightBlack text-xl mb-5">Already a member?<a className='text-primaryText ml-4 cursor-pointer' href='#'>Login</a></p>
+          <p className="text-lightBlack text-xl mb-5">Already a member?<a onClick={()=>navigate('/login')} className='text-primaryText ml-4 cursor-pointer' href='#'>Login</a></p>
 
           {/* form section */}
           <form action="#" className='flex flex-col gap-y-1'>
             {
-              SignUpInfo.map((item,index)=>{
+              SignUpInfo.map((item)=>{
                 return(
                   <>
                   <label className='labelANai'>{item.label}</label>
@@ -29,7 +33,7 @@ const SignUp = () => {
                 )
               })
             }
-            <button type='submit' className='login-btn mt-5 h-14 w-2/3 self-center font-labelClass'>Submit</button>
+            <button type='submit' onClick={()=> navigate('/login')} className='login-btn mt-5 h-14 w-2/3 self-center font-labelClass'>Submit</button>
           </form>
         </div>
       </div>
