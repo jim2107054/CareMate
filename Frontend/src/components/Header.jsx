@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "/src/assets/CareMate.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import profile_pic from '../assets/CareMate.png'
+import profile_pic from '../assets/profile_pic.jpg'
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
 
@@ -11,7 +11,7 @@ const Header = () => {
   const [token, setToken] = useState(true);
   const haldleLogOut = () => {
         setToken(!token)
-        navigate('/login')
+        navigate('/')
   }
   return (
     <section>
@@ -27,32 +27,32 @@ const Header = () => {
         <div className="px-10 py-2">
           <ul className="flex gap-10 text-2xl text-navText">
             <NavLink to="/home">
-              <li>Home</li>
-              <hr />
+              <li className="Navbar-li">Home</li>
+              <hr className="Navbar-li-hr" />
             </NavLink>
             <NavLink to="/doctors">
-              <li>Doctors</li>
-              <hr />
+              <li className="Navbar-li">Doctors</li>
+              <hr className="Navbar-li-hr" />
             </NavLink>
             <NavLink to="/appointment">
-              <li>Appointments</li>
-              <hr />
+              <li className="Navbar-li">Appointments</li>
+              <hr className="Navbar-li-hr" />
             </NavLink>
             <NavLink to="/blog">
-              <li>Health Blog</li>
-              <hr />
+              <li className="Navbar-li">Health Blog</li>
+              <hr className="Navbar-li-hr" />
             </NavLink>
             <NavLink to="/reviews">
-              <li>Reviews</li>
-              <hr />
+              <li className="Navbar-li">Reviews</li>
+              <hr className="Navbar-li-hr" />
             </NavLink>
           </ul>
         </div>
         <div className="flex items-center gap-8">
           {token ? (
             <div className="flex items-center cursor-pointer group relative">
-                <img src={profile_pic} alt="Profile" className="w-10 rounded-full" />
-                <MdOutlineArrowDropDown className="w-6 text-5xl"/>
+                <img src={profile_pic} alt="Profile" className="w-12 h-12 rounded-full" />
+                <MdOutlineArrowDropDown className="w-6 text-5xl text-black"/>
                 <div className="absolute top-0 right-0 pt-14 text-base text-gray-800 z-20 group-hover:block hidden">
                         <div className="bg-stone-300 min-w-48 rounded flex flex-col gap-2 p-4">
                                 <p onClick={()=>navigate('/my-profile')} className="hover:text-black cursor-pointer">My Profile</p>
@@ -63,12 +63,12 @@ const Header = () => {
             </div>
           ) : (
             <>
-              <button onClick={() => navigate("/login")} className="login-btn">
-                Login
-              </button>
-              <button onClick={() => navigate("/signup")} className="login-btn">
-                Register
-              </button>
+          <button
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-light hidden md:block"
+            onClick={() => navigate("/signup")}
+          >
+            Create Account
+          </button>
             </>
           )}
         </div>
