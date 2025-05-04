@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "/src/assets/CareMate.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import profile_pic from '../assets/profile_pic.jpg'
+import profile_pic from '../assets/landingPagePhoto.png'
 import { MdOutlineArrowDropDown } from "react-icons/md";
 
 
@@ -25,7 +25,7 @@ const Header = () => {
           </a>
         </div>
         <div className="px-10 py-2">
-          <ul className="flex gap-10 text-2xl text-navText">
+          <ul className="flex gap-10 text-2xl text-[#252424]">
             <NavLink to="/home">
               <li className="Navbar-li">Home</li>
               <hr className="Navbar-li-hr" />
@@ -64,7 +64,7 @@ const Header = () => {
           ) : (
             <>
           <button
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-light hidden md:block"
+            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-light hidden md:block hover:scale-105 transition-all duration-300"
             onClick={() => navigate("/signup")}
           >
             Create Account
